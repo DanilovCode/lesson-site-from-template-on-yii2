@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <!-- Last Published: Tue Oct 01 2019 14:09:51 GMT+0000 (UTC) --><html data-wf-page="5d874c138de89c973f9b909a" data-wf-site="5cf02e78a4a8373ef396411d">
 <head>
+	<base href="/"/>
 	<meta charset="<?= Yii::$app->charset ?>">
 	<title><?= $this->title ?></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver=1569939155">
