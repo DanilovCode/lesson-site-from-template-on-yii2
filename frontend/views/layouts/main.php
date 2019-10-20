@@ -70,7 +70,7 @@
 		</div>
 		<div class="bottom w-clearfix">
 			<div class="wrapper-footer-copywrite">
-				<div class="copy-text">© leadcode. все права защищены</div>
+				<div class="copy-text">© leadcode <?= \frontend\widgets\SiteYears::widget(['start_year' => 2019]) ?>. все права защищены</div>
 			</div>
 			<div class="social-link-blk"><a data-w-id="4cd13412-937b-4e91-14b3-acca04cd330c" href="https://www.facebook.com/leadcode.ru/" target="_blank" class="footer-social-link w-inline-block"><div class="wrapper-footer-social-link-text"><div>фб</div><div class="nav-line yellow"></div></div></a><a data-w-id="76642988-13f0-7884-5c12-9db9141b985a" href="https://vk.com/leadcode" target="_blank" class="footer-social-link w-inline-block"><div class="wrapper-footer-social-link-text"><div>вк</div><div class="nav-line yellow"></div></div></a><a data-w-id="bdfbfdaa-dcb3-814e-41a9-42cce2508213" href="https://www.instagram.com/leadcode.ru/" target="_blank" class="footer-social-link w-inline-block"><div class="wrapper-footer-social-link-text"><div>ин</div><div class="nav-line yellow"></div></div></a><a data-w-id="84d670d4-7ee5-9e18-88cf-fa5cd4a6d535" href="https://www.behance.net/ronhool" target="_blank" class="footer-social-link w-inline-block"><div class="wrapper-footer-social-link-text"><div>бе</div><div class="nav-line yellow"></div></div></a></div>
 		</div>
