@@ -34,4 +34,10 @@ class SiteController extends Controller
     {
     	return $this->render('services');
     }
+
+    public function actionAbout()
+    {
+    	$this->layout = 'about';
+    	return $this->render('about');
+    }
 }
