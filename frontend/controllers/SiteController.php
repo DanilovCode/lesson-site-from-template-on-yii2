@@ -40,4 +40,80 @@ class SiteController extends Controller
     	$this->layout = 'about';
     	return $this->render('about');
     }
+
+    public function actionAvtowestway()
+    {
+    	return $this->render('avtowestway');
+    }
+
+    public function actionBehappy()
+    {
+    	return $this->render('behappy');
+    }
+
+    public function actionBuroTetiMoti()
+    {
+    	return $this->render('buro-teti-moti');
+    }
+
+    public function actionCases()
+    {
+    	return $this->render('cases');
+    }
+
+    public function actionContacts()
+    {
+	    $this->layout = 'about';
+	    return $this->render('contacts');
+    }
+
+    public function actionFillerLab()
+    {
+	    return $this->render('filler-lab');
+    }
+
+    public function actionFsk()
+    {
+	    return $this->render('fsk');
+    }
+
+    public function actionIccentr()
+    {
+	    return $this->render('iccentr');
+    }
+
+    public function actionLogos()
+    {
+	    return $this->render('logos');
+    }
+
+    public function actionOkonika()
+    {
+	    return $this->render('okonika');
+    }
+
+    public function actionPolicy()
+    {
+	    return $this->render('policy');
+    }
+
+    public function actionPolimer()
+    {
+	    return $this->render('polimer');
+    }
+
+    public function actionSvMebel()
+    {
+	    return $this->render('sv-mebel');
+    }
+
+    public function actionTrcVolgodonsk()
+    {
+	    return $this->render('trc-volgodonsk');
+    }
+
+	public function actionSeostimul()
+	{
+		return $this->render('seostimul');
+	}
 }

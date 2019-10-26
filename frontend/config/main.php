@@ -42,6 +42,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+            	'portfolio' => 'site/cases',
             	'<action>' => 'site/<action>'
             ],
         ],

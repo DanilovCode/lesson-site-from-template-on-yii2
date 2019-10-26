@@ -1,4 +1,11 @@
 <?php
+
+/* @var $this yii\web\View */
+
+use yii\helpers\Url;
+
+$this->title = 'О проекте';
+
 ?>
 <div class="section-content">
 	<div class="top-blk"></div>
@@ -15,7 +22,7 @@
 						<div data-w-id="de7756a1-593a-b036-bb45-0f9927312ebe" class="form-btn"><input type="submit" value="отправить" data-wait="пожалуйста подождите..." class="send-button w-button">
 							<div class="btn-line"></div>
 						</div>
-						<div class="form-policy-text">Нажимая на кнопку <a href="https://searchengines.guru/showthread.php?t=680142">«отправить»</a>, вы даёте согласие на обработку персональных данных и соглашаетесь с <a href="/covenant.html" target="_blank"><span class="text-links">политикой конфеденциальности.</span></a></div>
+						<div class="form-policy-text">Нажимая на кнопку <a href="https://searchengines.guru/showthread.php?t=680142">«отправить»</a>, вы даёте согласие на обработку персональных данных и соглашаетесь с <a href="<?= Url::to(['site/policy']); ?>" target="_blank"><span class="text-links">политикой конфеденциальности.</span></a></div>
 					</form>
 					<div class="success-message w-form-done">
 						<div>Спасибо! Ваша заявка отправлена.</div>

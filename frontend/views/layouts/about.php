@@ -3,6 +3,8 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use yii\helpers\Url;
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -54,7 +56,32 @@
 		<div class="w-layout-grid nav-grid">
 			<div id="w-node-abbaea1c5554-1b08cefe" class="wrapper-brand"><a href="/" class="nav-brand w-nav-brand w--current"><img src="images/5d9250333506479da3e7c3e1_leadcode_weblogo_blk.svg" alt="" class="nav-logo"></a></div>
 			<div id="w-node-abbaea1c5557-1b08cefe" class="wrapper-nav-links">
-				<div class="nav-links div-block-12"><a data-w-id="10062818-e198-0458-8d55-abbaea1c5559" href="/cases.html" class="nav-link w-inline-block"><div class="nav-text-wrap"><div class="link-text">проекты</div><div class="link-text-hov">проекты</div></div></a><a data-w-id="10062818-e198-0458-8d55-abbaea1c555f" href="/services.html" class="nav-link w-inline-block"><div class="nav-text-wrap"><div class="link-text">услуги</div><div class="link-text-hov">услуги</div></div></a><a data-w-id="10062818-e198-0458-8d55-abbaea1c5565" href="/about.html" class="nav-link w-inline-block"><div class="nav-text-wrap"><div class="link-text">студия</div><div class="link-text-hov">студия</div></div></a><a data-w-id="10062818-e198-0458-8d55-abbaea1c556b" href="/contacts.html" class="nav-link w-inline-block"><div class="nav-text-wrap"><div class="link-text">контакты</div><div class="link-text-hov">контакты</div></div></a></div>
+				<div class="nav-links div-block-12">
+					<a data-w-id="10062818-e198-0458-8d55-abbaea1c5559" href="<?= Url::to(['site/cases']) ?>" class="nav-link w-inline-block">
+						<div class="nav-text-wrap">
+							<div class="link-text">проекты</div>
+							<div class="link-text-hov">проекты</div>
+						</div>
+					</a>
+					<a data-w-id="10062818-e198-0458-8d55-abbaea1c555f" href="<?= Url::to(['site/services']) ?>" class="nav-link w-inline-block">
+						<div class="nav-text-wrap">
+							<div class="link-text">услуги</div>
+							<div class="link-text-hov">услуги</div>
+						</div>
+					</a>
+					<a data-w-id="10062818-e198-0458-8d55-abbaea1c5565" href="<?= Url::to(['site/about']) ?>" class="nav-link w-inline-block">
+						<div class="nav-text-wrap">
+							<div class="link-text">студия</div>
+							<div class="link-text-hov">студия</div>
+						</div>
+					</a>
+					<a data-w-id="10062818-e198-0458-8d55-abbaea1c556b" href="<?= Url::to(['site/contacts']) ?>" class="nav-link w-inline-block">
+						<div class="nav-text-wrap">
+							<div class="link-text">контакты</div>
+							<div class="link-text-hov">контакты</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -73,7 +100,7 @@
 	<div data-w-id="7676b50e-7ea7-9c4d-e97b-2b57fbab27d1" class="burger-text">меню</div>
 </div>
 <div class="lb">
-	<div class="menu-blk"><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7aa" href="/cases.html" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">проекты</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7ae" href="/services.html" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">услуги</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7b2" href="/about.html" class="mobile-na-link-blk w-inline-block w--current"><div class="mob-link-text">студия</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7b6" href="/contacts.html" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">контакты</div><div class="nav-line mobile"></div></a></div>
+	<div class="menu-blk"><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7aa" href="<?= Url::to(['site/cases']); ?>" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">проекты</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7ae" href="/services.html" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">услуги</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7b2" href="/about.html" class="mobile-na-link-blk w-inline-block w--current"><div class="mob-link-text">студия</div><div class="nav-line mobile"></div></a><a data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7b6" href="/contacts.html" class="mobile-na-link-blk w-inline-block"><div class="mob-link-text">контакты</div><div class="nav-line mobile"></div></a></div>
 	<div class="div-bg"></div>
 	<div class="close-menu-btn">
 		<div data-w-id="fc70d23c-978f-5e43-d85e-64be82b4b7bc" class="close-menu-text">закрыть</div>

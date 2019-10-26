@@ -2,11 +2,14 @@
 
 /* @var $this yii\web\View */
 
+use yii\helpers\Url;
+
 $this->title = 'Студия брендинга Leadcode - Брендинг товаров и услуг, разработка сайтов';
 $this->registerMetaTag([
 	'name' => 'description',
 	'content' => 'Мы специализируемся на разработке сайтов, проектировании потребительских и корпоративных брендов.',
-])
+]);
+
 ?>
 <div class="section-main-works">
 	<div data-w-id="86679739-7a76-4bd8-a3f5-b7f111815220" class="hero-blk">
@@ -40,31 +43,31 @@ $this->registerMetaTag([
 				<div class="servise-text-blk">сайты</div>
 			</div>
 		</div>
-		<div class="first-cases-blk w-clearfix"><a href="/logos.html" class="left-cover-link-blk w-inline-block"><img src="images/5d7f4aaf17c02c1e9ee1e1d0_gif_na_glavnyu_leadcode.gif" alt="" class="main-first-case-cover"></a>
+		<div class="first-cases-blk w-clearfix"><a href="<?= Url::to(['site/logos']); ?>" class="left-cover-link-blk w-inline-block"><img src="images/5d7f4aaf17c02c1e9ee1e1d0_gif_na_glavnyu_leadcode.gif" alt="" class="main-first-case-cover"></a>
 			<div class="left-heading-case-div">
 				<div class="main-heading-case">логотипы</div>
 				<div class="main-cases-descript">2015-2018</div>
 			</div>
 		</div>
-		<div class="second-case-blk w-clearfix"><a href="/fsk.html" class="right-cover-link-blk w-inline-block"><img src="images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x.png" srcset="images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-500.png 500w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-800.png 800w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-1080.png 1080w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x.png 1129w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 569.8125px" alt="" class="main-second-case-cover"></a>
+		<div class="second-case-blk w-clearfix"><a href="<?= Url::to(['site/fsk']); ?>" class="right-cover-link-blk w-inline-block"><img src="images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x.png" srcset="images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-500.png 500w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-800.png 800w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x-p-1080.png 1080w, images/5d1b36be39cf5f1e0de16c29_D0A4D0A1D09A402x.png 1129w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 569.8125px" alt="" class="main-second-case-cover"></a>
 			<div class="right-heading-case-div">
 				<div class="main-heading-case left">фск</div>
 				<div class="main-cases-descript left">айдентика. сайт</div>
 			</div>
 		</div>
-		<div class="third-case-div w-clearfix"><a href="/iccentr.html" class="left-cover-link-blk w-inline-block"><img src="images/5d1b36c0384382fe93e23abd_Iccentr402x.png" srcset="images/5d1b36c0384382fe93e23abd_Iccentr402x-p-500.png 500w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-800.png 800w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-1080.png 1080w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-1600.png 1600w, images/5d1b36c0384382fe93e23abd_Iccentr402x.png 2400w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 562.5px" alt="" class="main-second-case-cover"></a>
+		<div class="third-case-div w-clearfix"><a href="<?= Url::to(['site/iccentr']); ?>" class="left-cover-link-blk w-inline-block"><img src="images/5d1b36c0384382fe93e23abd_Iccentr402x.png" srcset="images/5d1b36c0384382fe93e23abd_Iccentr402x-p-500.png 500w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-800.png 800w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-1080.png 1080w, images/5d1b36c0384382fe93e23abd_Iccentr402x-p-1600.png 1600w, images/5d1b36c0384382fe93e23abd_Iccentr402x.png 2400w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 562.5px" alt="" class="main-second-case-cover"></a>
 			<div class="left-heading-case-div">
 				<div class="main-heading-case">iccentr</div>
 				<div class="main-cases-descript">айдентика. сайт</div>
 			</div>
 		</div>
-		<div class="fourth-case-div w-clearfix"><a href="/be-happy.html" class="right-cover-link-blk w-inline-block"><img src="images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x.png" srcset="images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-500.png 500w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-800.png 800w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-1080.png 1080w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x.png 1150w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 532.40625px" alt="" class="main-fourth-case-cover"></a>
+		<div class="fourth-case-div w-clearfix"><a href="<?= Url::to(['site/behappy']); ?>" class="right-cover-link-blk w-inline-block"><img src="images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x.png" srcset="images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-500.png 500w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-800.png 800w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x-p-1080.png 1080w, images/5d53e0052c90f6c536203cbd_D091D0B820D0A5D18DD0BFD0BFD0B8402x.png 1150w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 88vw, 532.40625px" alt="" class="main-fourth-case-cover"></a>
 			<div class="right-heading-case-div">
 				<div class="main-heading-case left">be happy</div>
 				<div class="main-cases-descript left">айдентика. сайт</div>
 			</div>
 		</div>
-		<div class="all-progects-link"><a href="/cases.html" class="btn w-inline-block"><div data-w-id="d2146a0d-7208-f502-6286-ca08eab8bdfb" class="wrapper-link-block"><div class="all-project-button">все проекты</div><div class="btn-line"></div></div></a></div>
+		<div class="all-progects-link"><a href="<?= Url::to(['site/cases']); ?>" class="btn w-inline-block"><div data-w-id="d2146a0d-7208-f502-6286-ca08eab8bdfb" class="wrapper-link-block"><div class="all-project-button">все проекты</div><div class="btn-line"></div></div></a></div>
 	</div>
 	<div class="section-partners">
 		<div class="container-clients">
