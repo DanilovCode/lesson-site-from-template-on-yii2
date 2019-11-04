@@ -20,6 +20,14 @@ use frontend\models\ContactForm;
  */
 class SiteController extends Controller
 {
+	public function actionError() {
+		$this->layout = 'error';
+		$error = Yii::$app->response->statusCode;
+		if ($error === 404) {
+			return $this->render('404');
+		}
+	}
+
 	/**
      * Displays homepage.
      *
