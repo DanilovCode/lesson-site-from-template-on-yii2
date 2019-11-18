@@ -5,6 +5,7 @@
 
 use yii\helpers\Url;
 
+\frontend\assets\SiteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -13,7 +14,6 @@ use yii\helpers\Url;
 	<base href="/"/>
 	<meta charset="<?= Yii::$app->charset ?>">
 	<title><?= $this->title ?></title>
-	<link rel="stylesheet" type="text/css" href="css/style.css?ver=1569939155">
 	<?php $this->head() ?>
 	<meta content="Студия брендинга Leadcode - Брендинг товаров и услуг, разработка сайтов" property="og:title">
 	<meta content="Мы специализируемся на разработке сайтов, проектировании потребительских и корпоративных брендов." property="og:description">
@@ -26,7 +26,6 @@ use yii\helpers\Url;
 	<link href="images/5d935e246b517d296350b09a_fav_256x256_gif_round.gif" rel="apple-touch-icon">
 	<meta name="author" content="wtw">
 	<!-- HEAD CODE -->
-	<script src="/js/cookie-policy.js" type="text/javascript"></script>
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function(f,b,e,v,n,t,s)
@@ -43,11 +42,6 @@ use yii\helpers\Url;
 	</script>
 	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1190497224476144&ev=PageView&noscript=1"></noscript>
 	<!-- End Facebook Pixel Code -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-	<script src="/js/cookie-policy.js" type="text/javascript"></script>
 </head>
 <body wp_pages="main, cases, main-copy, about, projects, project-page, contacts" data-w-id="589643508fe5ff7f71fe85cb" class="body">
 <?php $this->beginBody() ?>
@@ -150,11 +144,6 @@ use yii\helpers\Url;
 		<div data-w-id="43fa69d0-5e70-6332-5a8b-d5857bb851e7" class="close-img-div"><img src="images/5d8ca7ad05586190351f7034_Close_icon.svg" width="75" data-w-id="43fa69d0-5e70-6332-5a8b-d5857bb851e8" alt="" class="close-img"></div>
 	</div>
 </div>
-<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="js/script.js?ver=1569939150" type="text/javascript"></script>
-<script src="./mail.js" type="text/javascript"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 <script>
 	var Webflow = Webflow || [];
 	Webflow.push(function() {
