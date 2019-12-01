@@ -28,6 +28,18 @@ class SiteController extends Controller
 		}
 	}
 
+	public function actionCreateAdmin()
+	{
+		$user = new \common\models\User();
+		$user->username = 'admin';
+		$user->email = 'admin@example.com';
+		$user->status = \common\models\User::STATUS_ACTIVE;
+		$user->setPassword('admin');
+		$user->generateAuthKey();
+		$user->save();
+		echo 'ok';
+	}
+
 	/**
      * Displays homepage.
      *
