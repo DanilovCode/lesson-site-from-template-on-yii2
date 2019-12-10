@@ -28,6 +28,7 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_INACTIVE = 9;
     const STATUS_ACTIVE = 10;
 
+    public $password;
 
     /**
      * {@inheritdoc}
@@ -53,12 +54,26 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
+        	[['username', 'email'], 'required'],
+        	[['username', 'email', 'password'], 'string'],
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
         ];
     }
 
-    /**
+    public function beforeSave($insert)
+    {
+    	if ($this->password) {
+    		$this->setPassword($this->password);
+    		$this->generateAuthKey();
+	    } elseif ($insert) {
+		    $this->addError('password', 'Пароль не может быть пустым');
+		    return false;
+	    }
+	    return parent::beforeSave($insert);
+    }
+
+	/**
      * {@inheritdoc}
      */
     public static function findIdentity($id)

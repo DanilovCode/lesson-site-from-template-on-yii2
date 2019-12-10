@@ -49,8 +49,5 @@ return [
             ],
         ],
     ],
-	'controllerMap' => [
-		'user' => 'andrewdanilov\adminpanel\controllers\UserController',
-	],
     'params' => $params,
 ];
