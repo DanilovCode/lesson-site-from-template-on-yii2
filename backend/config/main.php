@@ -21,7 +21,7 @@ return [
 	    'user' => [
 		    'class' => 'yii\web\User',
 		    'identityClass' => 'common\models\User',
-		    'accessChecker' => 'andrewdanilov\adminpanel\AccessChecker',
+		    'accessChecker' => 'backend\components\AccessChecker',
 		    'enableAutoLogin' => true,
 		    'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
 		    'loginUrl' => ['user/login'],

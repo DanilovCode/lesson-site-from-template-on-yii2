@@ -10,7 +10,7 @@ class UserSearch extends User
 	public function rules()
 	{
 		return [
-			[['id', 'username', 'email', 'status'], 'safe'],
+			[['id', 'username', 'email', 'status', 'is_admin'], 'safe'],
 		];
 	}
 
@@ -31,6 +31,7 @@ class UserSearch extends User
 		$query->andFilterWhere([
 			'id' => $this->id,
 			'status' => $this->status,
+			'is_admin' => $this->is_admin,
 		]);
 
 		$query->andFilterWhere(['like', 'username', $this->username])

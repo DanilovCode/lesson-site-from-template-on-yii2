@@ -21,6 +21,7 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property boolean $is_admin
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -56,12 +57,33 @@ class User extends ActiveRecord implements IdentityInterface
         return [
         	[['username', 'email'], 'required'],
         	[['username', 'email', 'password'], 'string'],
+	        [['is_admin'], 'boolean'],
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
         ];
     }
 
-    public function beforeSave($insert)
+    public static function statuses()
+    {
+    	return [
+		    static::STATUS_INACTIVE => 'Неактивный',
+		    static::STATUS_ACTIVE => 'Активный',
+		    static::STATUS_DELETED => 'Удаленный',
+	    ];
+    }
+
+    public function attributeLabels()
+    {
+	    return [
+	    	'id' => 'ID',
+	    	'username' => 'Имя пользователя',
+	    	'email' => 'E-mail',
+	    	'status' => 'Статус',
+	    	'is_admin' => 'Администратор',
+	    ];
+    }
+
+	public function beforeSave($insert)
     {
     	if ($this->password) {
     		$this->setPassword($this->password);

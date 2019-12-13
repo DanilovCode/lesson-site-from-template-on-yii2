@@ -9,13 +9,11 @@ use yii\helpers\Html;
 
 <?= $form->field($model, 'username')->textInput() ?>
 <?= $form->field($model, 'email')->textInput(['type' => 'email']) ?>
-<?= $form->field($model, 'status')->dropDownList([
-	\common\models\User::STATUS_INACTIVE => 'Неактивный',
-	\common\models\User::STATUS_ACTIVE => 'Активный',
-	\common\models\User::STATUS_DELETED => 'Удаленный',
-]) ?>
+<?= $form->field($model, 'status')->dropDownList(\common\models\User::statuses()) ?>
 
 <?= $form->field($model, 'password')->passwordInput() ?>
+
+<?= $form->field($model, 'is_admin')->checkbox() ?>
 
 <?= Html::submitButton('Соохранить', ['class' => 'btn btn-success']) ?>
 
